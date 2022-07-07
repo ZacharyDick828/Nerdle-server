@@ -8,8 +8,8 @@ const Letter = require('../Models/Letter-model.js')
 
 router.get('/', (req, res) => {
     Letter.find()
-        .then((Letters) => {
-            return res.json(Letters)
+        .then((letters) => {
+            return res.json(letters)
         })
         .catch((err) => {
             console.log(err)
