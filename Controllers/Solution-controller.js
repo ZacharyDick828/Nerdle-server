@@ -7,7 +7,7 @@ const Solution = require('../Models/Solution-model.js')
 // Index
 
 router.get('/', (req, res) => {
-    Solution.find()
+    Solution.find(Solution)
         .then((solutions) => {
             return res.json(solutions)
         })
