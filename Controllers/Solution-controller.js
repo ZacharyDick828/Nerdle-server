@@ -8,8 +8,8 @@ const Solution = require('../Models/Solution-model.js')
 
 router.get('/', (req, res) => {
     Solution.find()
-        .then((Solutions) => {
-            return res.json(Solutions)
+        .then((solutions) => {
+            return res.json(solutions)
         })
         .catch((err) => {
             console.log(err)
