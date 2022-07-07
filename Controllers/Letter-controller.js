@@ -7,7 +7,7 @@ const Letter = require('../Models/Letter-model.js')
 // Index
 
 router.get('/', (req, res) => {
-    Letter.find()
+    Letter.find('letters')
         .then((Letters) => {
             return res.json(Letters)
         })
